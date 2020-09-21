@@ -1,0 +1,93 @@
+
+body{
+    background-image: url('bg5.jpg');
+}
+#fanSpeed{
+    border-radius: 0px;
+    border: 1px solid red;
+    padding: 10px 10px;
+}
+h2{
+margin: 0;
+padding: 0;
+}
+.fan {
+    height:450px;
+    width: 450px;
+    margin: auto;
+    transform-origin: bottom;
+    transform: rotate3d(2, -1, -1, -0.2turn);
+}
+
+.round{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
+.circle{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    border: 4px dotted blue;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.f1, .f2, .f3{
+    background-color: red;
+    border-top: 4px dotted blue;
+}
+.f1{
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    bottom: 0;
+    top: 85px;
+    right: -2px;
+    margin: auto;
+    transform-origin: bottom;
+    transform: rotate(21deg) skewX(4deg) skewY(3deg);
+}
+
+.f2{
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    left: -5px;
+    bottom: 0;
+    top: 94px;
+    margin: auto;
+    transform-origin: bottom;
+    transform: rotate(137deg) skewX(3deg) skewY(3deg);
+}
+
+.f3{
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    left: 6px;
+    right: 0;
+    top: 9%;
+    margin: auto;
+    transform-origin: bottom;
+    transform: rotate(-100deg) skewX(-3deg) skewY(3deg);
+}
